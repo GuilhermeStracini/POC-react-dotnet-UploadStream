@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace POCUploadStream.Controllers
 {
+    [Route("api/[controller]")]
     public class UploadController : Controller
     {
         private static readonly FormOptions DefaultFormOptions = new FormOptions();
 
-        [HttpPost]
+        [HttpPost("[action]")]
         public async Task<IActionResult> Index()
         {
             if (!MultipartRequestHelper.IsMultipartContentType(Request.ContentType))

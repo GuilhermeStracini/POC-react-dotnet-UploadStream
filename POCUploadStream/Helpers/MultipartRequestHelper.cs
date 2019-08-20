@@ -41,7 +41,7 @@ namespace POCUploadStream.Helpers
             if (!hasContentDispositionHeader || !HasFileContentDisposition(contentDisposition))
                 return;
             var targetFilePath = Path.GetTempFileName();
-            using (var targetStream = System.IO.File.Create(targetFilePath))
+            using (var targetStream = File.Create(targetFilePath))
                 await section.Body.CopyToAsync(targetStream);
         }
     }
