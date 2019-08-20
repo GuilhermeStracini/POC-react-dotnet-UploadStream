@@ -1,16 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.WebUtilities;
+using Microsoft.Net.Http.Headers;
+using POCUploadStream.Helpers;
+using System.Threading.Tasks;
 
 namespace POCUploadStream.Controllers
 {
     public class UploadController : Controller
     {
-        public IActionResult Index()
+        private static readonly FormOptions DefaultFormOptions = new FormOptions();
+
+        [HttpPost]
+        public async Task<IActionResult> Index()
         {
-            return View();
+            if (!MultipartRequestHelper.IsMultipartContentType(Request.ContentType))
+                return BadRequest($"Expected a multipart request, but got {Request.ContentType}");
+            var boundary = MultipartRequestHelper.GetBoundary(
+                MediaTypeHeaderValue.Parse(Request.ContentType),
+                DefaultFormOptions.MultipartBoundaryLengthLimit);
+            var reader = new MultipartReader(boundary, HttpContext.Request.Body);
+            var section = await reader.ReadNextSectionAsync();
+            while (section != null)
+            {
+                await MultipartRequestHelper.Upload(section);
+                section = await reader.ReadNextSectionAsync();
+            }
+
+            return Ok(new { Success = true, boundary.Length });
         }
     }
 }
