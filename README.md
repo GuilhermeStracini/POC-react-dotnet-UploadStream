@@ -14,6 +14,7 @@ dotnet new React
 yarn install
 yarn upgrade react-scripts --latest
 yarn remove eslint eslint-config-react-app eslint-plugin-flowtype eslint-plugin-import eslint-plugin-js-ally eslint-plugin-react babel-eslint
+npm install --save react@16.4.0 react-dom@16.4.0
 ```
 
 ---
