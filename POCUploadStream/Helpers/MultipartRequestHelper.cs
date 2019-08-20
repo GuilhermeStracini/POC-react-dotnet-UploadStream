@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNetCore.WebUtilities;
-using Microsoft.Net.Http.Headers;
+﻿using Microsoft.Net.Http.Headers;
 using System;
 using System.IO;
-using System.Threading.Tasks;
 
 namespace POCUploadStream.Helpers
 {
@@ -33,16 +31,6 @@ namespace POCUploadStream.Helpers
                    && contentDisposition.DispositionType.Equals("form-data")
                    && (!string.IsNullOrEmpty(contentDisposition.FileName.ToString())
                        || !string.IsNullOrEmpty(contentDisposition.FileNameStar.ToString()));
-        }
-
-        public static async Task Upload(MultipartSection section)
-        {
-            var hasContentDispositionHeader = ContentDispositionHeaderValue.TryParse(section.ContentDisposition, out var contentDisposition);
-            if (!hasContentDispositionHeader || !HasFileContentDisposition(contentDisposition))
-                return;
-            var targetFilePath = Path.GetTempFileName();
-            using (var targetStream = File.Create(targetFilePath))
-                await section.Body.CopyToAsync(targetStream);
         }
     }
 }
