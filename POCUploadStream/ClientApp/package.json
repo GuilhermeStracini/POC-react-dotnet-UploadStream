@@ -14,7 +14,7 @@
     "rimraf": "^3.0.2"
   },
   "devDependencies": {
-    "ajv": "^6.12.3",
+    "ajv": "^6.12.6",
     "cross-env": "^5.2.0",
     "eslint-plugin-jsx-a11y": "^5.1.1"
   },
