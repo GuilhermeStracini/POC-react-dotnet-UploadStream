@@ -1,11 +1,9 @@
-# POC-UploadStream
+# POC UploadStream
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/45324253143240acb6e63acc42b110db)](https://app.codacy.com/app/guilherme_9/POC-UploadStream?utm_source=github.com&utm_medium=referral&utm_content=guibranco/POC-UploadStream&utm_campaign=Badge_Grade_Dashboard)
+🔬 Proof of Concept of a upload stream (multipart form data) from **React JS** and ** React Native ** app to **C# .NET Core** backend
 
-**Proof of Concept** *(POC)* of a upload stream (multipart form data) from **React** app to **C# .NET Core** backend
+This POC is based on a .NET Core API & React JS & React Native mobile app project.
 
-
-This POC is based on a .NET Core API & React project.
 ```bash
 dotnet new React
 ```
