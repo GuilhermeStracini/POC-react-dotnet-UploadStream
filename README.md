@@ -1,4 +1,4 @@
-# POC UploadStream
+# POC React & .NET UploadStream
 
 🔬 Proof of Concept of a upload stream (multipart form data) from **React JS** and ** React Native ** app to **C# .NET Core** backend
 
