@@ -2,8 +2,10 @@
 
 🔬 Proof of Concept of an upload stream (multipart form data) from **React JS** and ** React Native ** app to **C# .NET Core** backend
 
+[![wakatime](https://wakatime.com/badge/github/GuilhermeStracini/POC-react-dotnet-UploadStream.svg)](https://wakatime.com/badge/github/GuilhermeStracini/POC-react-dotnet-UploadStream)
 [![Maintainability](https://api.codeclimate.com/v1/badges/d24885c9abbb02ef99a0/maintainability)](https://codeclimate.com/github/GuilhermeStracini/POC-react-dotnet-UploadStream/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/d24885c9abbb02ef99a0/test_coverage)](https://codeclimate.com/github/GuilhermeStracini/POC-react-dotnet-UploadStream/test_coverage)
+[![CodeFactor](https://www.codefactor.io/repository/github/GuilhermeStracini/POC-react-dotnet-UploadStream/badge)](https://www.codefactor.io/repository/github/GuilhermeStracini/POC-react-dotnet-UploadStream)
 
 This POC is based on a .NET Core API & React JS & React Native mobile app project.
 
