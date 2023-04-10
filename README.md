@@ -1,6 +1,6 @@
 # POC React & .NET UploadStream
 
-🔬 Proof of Concept of an upload stream (multipart form data) from **React JS** and ** React Native ** app to **C# .NET Core** backend
+🔬 Proof of Concept of an upload stream (multipart form data) from **React JS** and **React Native** app to **C# .NET Core** backend
 
 [![wakatime](https://wakatime.com/badge/github/GuilhermeStracini/POC-react-dotnet-UploadStream.svg)](https://wakatime.com/badge/github/GuilhermeStracini/POC-react-dotnet-UploadStream)
 [![Maintainability](https://api.codeclimate.com/v1/badges/d24885c9abbb02ef99a0/maintainability)](https://codeclimate.com/github/GuilhermeStracini/POC-react-dotnet-UploadStream/maintainability)
