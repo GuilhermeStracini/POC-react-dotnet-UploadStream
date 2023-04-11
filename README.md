@@ -6,6 +6,8 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/d24885c9abbb02ef99a0/maintainability)](https://codeclimate.com/github/GuilhermeStracini/POC-react-dotnet-UploadStream/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/d24885c9abbb02ef99a0/test_coverage)](https://codeclimate.com/github/GuilhermeStracini/POC-react-dotnet-UploadStream/test_coverage)
 [![CodeFactor](https://www.codefactor.io/repository/github/GuilhermeStracini/POC-react-dotnet-UploadStream/badge)](https://www.codefactor.io/repository/github/GuilhermeStracini/POC-react-dotnet-UploadStream)
+[![GitHub license](https://img.shields.io/github/license/GuilhermeStracini/POC-react-dotnet-UploadStream)](https://github.com/GuilhermeStracini/POC-react-dotnet-UploadStream)
+[![GitHub last commit](https://img.shields.io/github/last-commit/GuilhermeStracini/POC-react-dotnet-UploadStream)](https://github.com/GuilhermeStracini/POC-react-dotnet-UploadStream)
 
 This POC is based on a .NET Core API & React JS & React Native mobile app project.
 
