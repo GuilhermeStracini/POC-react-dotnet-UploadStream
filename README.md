@@ -9,7 +9,7 @@
 [![GitHub license](https://img.shields.io/github/license/GuilhermeStracini/POC-react-dotnet-UploadStream)](https://github.com/GuilhermeStracini/POC-react-dotnet-UploadStream)
 [![GitHub last commit](https://img.shields.io/github/last-commit/GuilhermeStracini/POC-react-dotnet-UploadStream)](https://github.com/GuilhermeStracini/POC-react-dotnet-UploadStream)
 
-This POC is based on a .NET Core API & React JS & React Native mobile app project.
+This PoC is based on a .NET Core API & React JS & React Native mobile app project.
 
 ```bash
 dotnet new React
