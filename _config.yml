@@ -1,0 +1,4 @@
+theme: jekyll-theme-dinky
+title: POC React & .NET Upload Stream
+description: Proof of Concept of an upload stream from React (JS & Native) app to.NET
+show_downloads: true
