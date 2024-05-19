@@ -1,4 +1,4 @@
-﻿import React, { Component } from 'react'
+import React, { Component } from 'react'
 import './Upload.css';
 import Dropzone from './Dropzone';
 import Progress from './Progress';
