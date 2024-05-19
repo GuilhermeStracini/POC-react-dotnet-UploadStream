@@ -33,7 +33,6 @@ namespace POCUploadStream
         {
             if (env.IsDevelopment())
                 app.UseDeveloperExceptionPage();
-
             else
                 app.UseExceptionHandler("/Error");
             app.UseStaticFiles();

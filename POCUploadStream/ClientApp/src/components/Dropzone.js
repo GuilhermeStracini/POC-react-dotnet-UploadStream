@@ -1,4 +1,4 @@
-﻿import React, { Component } from 'react'
+import React, { Component } from 'react'
 import './Dropzone.css'
 
 class Dropzone extends Component {
