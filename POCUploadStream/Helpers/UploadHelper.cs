@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using System;
+using System.IO;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Net.Http.Headers;
-using System;
-using System.IO;
-using System.Threading.Tasks;
 
 namespace POCUploadStream.Helpers
 {
@@ -15,10 +15,13 @@ namespace POCUploadStream.Helpers
         public static async Task Process(HttpRequest request)
         {
             if (!MultipartRequestHelper.IsMultipartContentType(request.ContentType))
-                throw new InvalidOperationException($"Expected a multipart request, but got {request.ContentType}");
+                throw new InvalidOperationException(
+                    $"Expected a multipart request, but got {request.ContentType}"
+                );
             var boundary = MultipartRequestHelper.GetBoundary(
                 MediaTypeHeaderValue.Parse(request.ContentType),
-                DefaultFormOptions.MultipartBoundaryLengthLimit);
+                DefaultFormOptions.MultipartBoundaryLengthLimit
+            );
             var reader = new MultipartReader(boundary, request.Body);
             var section = await reader.ReadNextSectionAsync();
             while (section != null)
@@ -30,8 +33,14 @@ namespace POCUploadStream.Helpers
 
         private static async Task Upload(MultipartSection section)
         {
-            var hasContentDispositionHeader = ContentDispositionHeaderValue.TryParse(section.ContentDisposition, out var contentDisposition);
-            if (!hasContentDispositionHeader || !MultipartRequestHelper.HasFileContentDisposition(contentDisposition))
+            var hasContentDispositionHeader = ContentDispositionHeaderValue.TryParse(
+                section.ContentDisposition,
+                out var contentDisposition
+            );
+            if (
+                !hasContentDispositionHeader
+                || !MultipartRequestHelper.HasFileContentDisposition(contentDisposition)
+            )
                 return;
             var targetFilePath = Path.GetTempFileName();
             using (var targetStream = File.Create(targetFilePath))

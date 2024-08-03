@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Http.Features;
+﻿using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
 using POCUploadStream.Filters;
 using POCUploadStream.Helpers;
-using System.Threading.Tasks;
 
 namespace POCUploadStream.Controllers
 {

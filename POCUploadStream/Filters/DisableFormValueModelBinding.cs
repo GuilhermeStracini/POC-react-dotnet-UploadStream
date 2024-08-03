@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc.Filters;
+﻿using System;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
-using System;
 
 namespace POCUploadStream.Filters
 {
@@ -14,7 +14,6 @@ namespace POCUploadStream.Filters
             factories.RemoveType<JQueryFormValueProviderFactory>();
         }
 
-        public void OnResourceExecuted(ResourceExecutedContext context)
-        { }
+        public void OnResourceExecuted(ResourceExecutedContext context) { }
     }
 }
