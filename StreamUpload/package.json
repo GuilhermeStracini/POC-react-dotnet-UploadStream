@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "react": "19.0.0",
-    "react-native": "0.77.1",
+    "react-native": "0.78.0",
     "react-native-image-picker": "^8.0.0"
   },
   "devDependencies": {
