@@ -10,7 +10,7 @@
   "dependencies": {
     "react": "19.0.0",
     "react-native": "0.78.0",
-    "react-native-image-picker": "^8.0.0"
+    "react-native-image-picker": "^8.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
