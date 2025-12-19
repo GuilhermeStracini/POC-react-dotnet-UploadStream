@@ -7,7 +7,6 @@
 [![GitHub license](https://img.shields.io/github/license/GuilhermeStracini/POC-react-dotnet-UploadStream)](https://github.com/GuilhermeStracini/POC-react-dotnet-UploadStream)
 [![GitHub last commit](https://img.shields.io/github/last-commit/GuilhermeStracini/POC-react-dotnet-UploadStream)](https://github.com/GuilhermeStracini/POC-react-dotnet-UploadStream)
 
-
 🔬 Proof of Concept of an upload stream (multipart form data) from **React JS** and **React Native** app to **C# .NET Core** backend
 
 ---
@@ -19,6 +18,7 @@ This PoC is based on a .NET Core API & React JS & React Native mobile app projec
 ```bash
 dotnet new React
 ```
+
 If you want to build your own project, follow these steps:
 
 ```bash
@@ -49,4 +49,4 @@ Just open the solution in Visual Studio and run the project.
 
 A browser instance should open in localhost, navigate to **Upload** tab, select one or more files to upload (drag & drop enabled) and then click on the **Upload** button.
 
-*After the upload, you should click the **Clear** button to send the same file again (some error with id of the files might occour if this action is not done).
+\*After the upload, you should click the **Clear** button to send the same file again (some error with id of the files might occour if this action is not done).
