@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
     "bootstrap": "^5.3.8",
     "jquery": "4.0.0",
     "react-router-dom": "^7.14.0",
